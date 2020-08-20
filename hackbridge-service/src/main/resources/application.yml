@@ -1,0 +1,17 @@
+spring:
+    application:
+        name: hackbridge
+    devtools:
+        restart:
+            enabled: true
+    jackson:
+        serialization:
+            indent-output: true
+    datasource:
+        type: com.zaxxer.hikari.HikariDataSource
+        url: jdbc:postgresql://localhost:5432/postgres
+        username: postgres
+        password:
+        hikari:
+            poolName: Hikari
+            auto-commit: false
